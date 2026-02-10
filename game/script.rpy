@@ -46,15 +46,18 @@ label start:
     play sound "yawning-6096.mp3" volume 8.0
     pause 2.5
     show colette glad 
-    c "Yeah! It's Valentine's Day today!"
+    play sound "aw-86103.mp3" volume 3.5
+    c "Aw... It's Valentine's Day today!"
     show colette confident 
     c "I'm so excited! It'll be such a lovely day!"
     scene bu
+    play sound "sad.mp3" volume 10.5
     c "I mean... I don't have a boyfriend... yet..."
     show colette yes
     c "But my bestie Anya is going to hang out with her boy today."
     c "She wants me to go with them."
     show colette confident
+    play sound "chuckle.mp3" volume 2.5
     c "It'll be so fun! Trust!"
 
     return
