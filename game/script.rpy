@@ -47,7 +47,7 @@ label start:
     pause 2.5
     show colette glad 
     play sound "aw-86103.mp3" volume 3.5
-    c "Aw... It's Valentine's Day today!"
+    c "Aw... It's 💝 Valentine's Day 💕 today!"
     show colette confident 
     c "I'm so excited! It'll be such a lovely day!"
     scene bu
@@ -59,5 +59,14 @@ label start:
     show colette confident
     play sound "chuckle.mp3" volume 2.5
     c "It'll be so fun! Trust!"
+    show colette glad
+    c "Off to Anya's!"
+    c "Let's go!!! 💞"
+    scene house
+    with fade
+    play music "footsteps-dirt-gravel-6823.mp3" volume 4.5
+    pause 6.5
+    scene near 
+    with fade
 
     return
