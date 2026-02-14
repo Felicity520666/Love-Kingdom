@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 130, in script
+    scene pink with zoom
+  File "game/script.rpy", line 130, in <module>
+    scene pink with zoom
+                    ^^^^
+NameError: name 'zoom' is not defined. Did you mean: 'Zoom'?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 130, in script
+    scene pink with zoom
+  File "renpy/ast.py", line 1577, in execute
+    paired = renpy.python.py_eval(self.paired)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 130, in <module>
+    scene pink with zoom
+                    ^^^^
+NameError: name 'zoom' is not defined. Did you mean: 'Zoom'?
+
+macOS-15.7.3-arm64-arm-64bit arm64
+Ren'Py 8.4.1.25072401
+Love Kingdom 1.0
+Thu Feb 12 18:29:02 2026
