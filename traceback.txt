@@ -1,33 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 130, in script
-    scene pink with zoom
-  File "game/script.rpy", line 130, in <module>
-    scene pink with zoom
-                    ^^^^
-NameError: name 'zoom' is not defined. Did you mean: 'Zoom'?
+NameError: name 'S' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 399, in script
+    S "❤️ Happy Valentine's Day! 💗"
+Exception: Sayer 'S' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 130, in script
-    scene pink with zoom
-  File "renpy/ast.py", line 1577, in execute
-    paired = renpy.python.py_eval(self.paired)
-             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "renpy/ast.py", line 625, in eval_who
+    return renpy.python.py_eval(who)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 130, in <module>
-    scene pink with zoom
-                    ^^^^
-NameError: name 'zoom' is not defined. Did you mean: 'Zoom'?
+  File "<none>", line 1, in <module>
+NameError: name 'S' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 399, in script
+    S "❤️ Happy Valentine's Day! 💗"
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 956, in execute
+    who = eval_who(self.who, self.who_fast)
+          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 627, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'S' is not defined.
 
 macOS-15.7.3-arm64-arm-64bit arm64
 Ren'Py 8.4.1.25072401
 Love Kingdom 1.0
-Thu Feb 12 18:29:02 2026
+Mon Feb 16 11:47:15 2026
