@@ -396,7 +396,7 @@ label end:
     with dissolve
     s "So, thank you guys for visiting our Love Kingdom."
     s "I hope you learnt something new, and..."
-    s "❤️ Happy Valentine's Day! 💗"
+    s "{b}❤️ Happy Valentine's Day! 💗{/b}"
 
 
 
