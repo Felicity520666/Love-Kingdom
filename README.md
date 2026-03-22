@@ -5,7 +5,7 @@ A cozy and informative visual novel made with Ren'Py ❤️.
 ## Play Online
 
 - 1.0 version play here: <https://felicity666.itch.io/love-kingdom>
-- 2.0 version play here:
+- 2.0 version play here: <https://felicity666.itch.io/the-love-kingdom-2>
 
 ## About The Game
 
